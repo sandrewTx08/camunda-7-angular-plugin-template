@@ -1,0 +1,17 @@
+<table class="table">
+  <thead>
+    <tr>
+      <th>{{ "ID" | translate }}</th>
+      <th>{{ "FIRST_NAME" | translate }}</th>
+      <th>{{ "LAST_NAME" | translate }}</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr *ngFor="let u of user$ | async">
+      <td>{{ u.id }}</td>
+      <td>{{ u.firstName }}</td>
+      <td>{{ u.lastName }}</td>
+    </tr>
+  </tbody>
+</table>
