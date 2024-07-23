@@ -6,7 +6,8 @@
     "start": "ng serve",
     "build:ng": "ng build --configuration production --output-hashing=none;",
     "build": "npm run build:ng; node plugin/build",
-    "build:win": "npm run build:ng | node plugin/build"
+    "build:windows": "npm run build:ng | node plugin/build",
+    "build:linux": "npm run build"
   },
   "private": true,
   "dependencies": {

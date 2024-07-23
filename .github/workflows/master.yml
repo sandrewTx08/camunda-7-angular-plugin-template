@@ -22,7 +22,7 @@ jobs:
         run: npm install --force
 
       - name: Build the plugin
-        run: npm run buildPlugin
+        run: npm run build
 
       - name: Extract repository name
         id: extract_repo_name
